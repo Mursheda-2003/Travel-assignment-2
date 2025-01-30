@@ -14,16 +14,15 @@ section{
     margin-top: 10%;
    
 }
-/* header nav img{
-    width: 100%;
-} */
+
 span{
     color: var(--primary-color);
 }
 .logo{
-    display: flex;
-    align-items: center;
-    gap: 2.3rem;
+    position: relative;
+    font-weight: 600;
+    cursor: default;
+    margin-right: 70%;
     
 }
 .nav h2{
@@ -38,8 +37,24 @@ nav{
 }
 .navbar, .item a{
     text-decoration: none;
-    color: #424247;
+    color: #000000;
 }
+
+label #open,
+label #close {
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
 .home a{
     color: var(--primary-color);
 }
@@ -50,14 +65,9 @@ nav{
     font-size: 1.25rem;
     align-items: center;
     list-style-type: none;
-    gap: 25px;
+    gap: 15px;
 }
 
-/* .checkbtn{
-    font-size: 30px;
-    float: right;
-
-} */
 
 /* banner css */
 .banner{
@@ -69,6 +79,7 @@ nav{
     color: white;
     text-align: center;
     margin-top: 100px;
+    margin-left: -2%;
     border-radius: 8px 8px;
     display: flex;
     flex-direction: column;
@@ -480,6 +491,43 @@ footer, i{
         gap: 30px;
     }
   
+    label #open {
+        display: block;
+        cursor: pointer;
+        left: 28px;
+        position: absolute;
+    }
+    label #close{
+        left: 28px;
+        position: absolute;
+    }
+    #check:checked ~ div {
+        left: 0;
+    }
+    #check:checked ~ label #open {
+        display: none;
+    }
+    #check:checked~label #close {
+        display: block;
+        cursor: pointer;
+    }
+    .logo{
+        margin-left:110px;
+    }
+
+    .list  {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(44, 58, 79);
+        position: absolute;
+        top: 120px;
+        left: -100% ;
+        width: 180px;
+        padding: 1rem;
+        border-radius: 0px 0px 0px 6px;
+        display: flex;
+      }
+
     .frm{
         width: 200px;
         height: 190px;
@@ -540,6 +588,46 @@ footer, i{
         flex-direction: column;
         gap: 30px;
     }
+
+    label #open {
+        display: block;
+        cursor: pointer;
+        left: 28px;
+        position: absolute;
+    }
+    label #close{
+        left: 28px;
+        position: absolute;
+    }
+    #check:checked ~ div {
+        left: 0;
+    }
+    #check:checked ~ label #open {
+        display: none;
+    }
+    #check:checked~label #close {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo{
+        margin-left: 120%;
+    }
+
+
+    .list  {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(44, 58, 79);
+        position: absolute;
+        top: 120px;
+        left: -150% ;
+        width: 180px;
+        padding: 1rem;
+        border-radius: 0px 0px 0px 6px;
+        display: flex;
+      }
+
     .frm{
         width: 400px;
         height: 150px;
