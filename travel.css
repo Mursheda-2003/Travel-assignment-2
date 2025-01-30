@@ -22,7 +22,7 @@ span{
     position: relative;
     font-weight: 600;
     cursor: default;
-    margin-right: 70%;
+   margin-left: -67%;
     
 }
 .nav h2{
@@ -39,7 +39,6 @@ nav{
     text-decoration: none;
     color: #000000;
 }
-
 label #open,
 label #close {
     color: rgb(14, 13, 13);
@@ -281,10 +280,10 @@ border-radius: 10px;
 .card-3{
     width: 500px;
     height: 120px;
-    background-color: #e5e1dd;
     margin: 0 auto;
     padding: 50px;
     border-radius: 6px; 
+    background-color: #e5e1dd;
 }
 /* discount section */
 .book-1{
@@ -512,13 +511,13 @@ footer, i{
         cursor: pointer;
     }
     .logo{
-        margin-left:110px;
+        margin-left:250px;
     }
 
     .list  {
         display: none;
         flex-direction: column;
-        background-color: rgb(44, 58, 79);
+        background-color: rgb(139, 180, 240);
         position: absolute;
         top: 120px;
         left: -100% ;
@@ -527,7 +526,6 @@ footer, i{
         border-radius: 0px 0px 0px 6px;
         display: flex;
       }
-
     .frm{
         width: 200px;
         height: 190px;
@@ -551,7 +549,7 @@ footer, i{
         grid-template-columns: repeat(1, 1fr);
     }
     .card-3{
-        width: 75%;
+        width: 70%;
         margin-top: 350px;
     }
    .morning, .night{
@@ -651,9 +649,10 @@ footer, i{
         grid-template-columns: repeat(1, 1fr);
     }
     .card-3{
-        width: 85%;
+        width: 80%;
         margin-top: 260px;
     }
+    
     .morning, .night{
         width: 250px;
         right: 20px;
